@@ -30,7 +30,7 @@ const TypewriterIntro = ({ onComplete }: TypewriterIntroProps) => {
   return (
     <div className="fixed inset-0 bg-background flex items-center justify-center z-50">
       <div className="text-center max-w-4xl mx-auto px-8">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-bogle-dark leading-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-bogle-dark leading-tight">
           {currentText.split(' ').map((word, index) => {
             if (word.toLowerCase() === 'bogle.') {
               return (
