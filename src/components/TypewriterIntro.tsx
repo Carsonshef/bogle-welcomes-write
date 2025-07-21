@@ -7,7 +7,7 @@ interface TypewriterIntroProps {
 const TypewriterIntro = ({ onComplete }: TypewriterIntroProps) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "Welcome to Bogle. More options, less fees. We do payments better.";
+  const fullText = "Welcome to Bogle. More options, lower fees. We do payments better.";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -30,7 +30,7 @@ const TypewriterIntro = ({ onComplete }: TypewriterIntroProps) => {
   return (
     <div className="fixed inset-0 bg-background flex items-center justify-center z-50">
       <div className="text-center max-w-4xl mx-auto px-8">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-bogle-dark leading-tight">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-bogle-dark leading-tight">
           {currentText.split(' ').map((word, index) => {
             if (word.toLowerCase() === 'bogle.') {
               return (
